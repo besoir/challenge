@@ -1,6 +1,13 @@
 package com.mindex.challenge.data;
 
 public class Compensation {
+
+    /*
+     * I just used the same id as the employees table
+     * I did this because you cant have an instance of Compensation without an existing employee
+     * If you were to tie compensation to another table I would add a newPk
+     * And then send the newPk to another table as a fk for that table
+     */
     private String employeeId;
     private String salary;
     private String effectiveDate;
@@ -8,6 +15,7 @@ public class Compensation {
     public Compensation() {
     }
 
+    //create getters
     public String getEmployeeId() {
         return this.employeeId;
     }
@@ -20,6 +28,7 @@ public class Compensation {
         return this.effectiveDate;
     }
 
+    //Create setters below
     public void setEmployeeId(String id) {
         this.employeeId = id;
     }

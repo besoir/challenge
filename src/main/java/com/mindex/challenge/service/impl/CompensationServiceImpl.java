@@ -7,7 +7,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.util.UUID;
 
 @Service
 public class CompensationServiceImpl implements CompensationService {
@@ -21,7 +20,12 @@ public class CompensationServiceImpl implements CompensationService {
     public Compensation create(Compensation compensation) {
         LOG.debug("Creating compensation [{}]", compensation);
 
-        compensation.setEmployeeId(UUID.randomUUID().toString());
+        //check if they gave an employeeId which ties the whole thing together
+        if (compensation.getEmployeeId() == null) {
+            throw new RuntimeException("No employeeId provided");
+        }
+
+        //this needs to be from
         compensationRepository.insert(compensation);
 
         return compensation;

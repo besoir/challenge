@@ -43,6 +43,12 @@ public class DataBootstrap {
             employeeRepository.insert(employee);
         }
 
+        /*
+         * Adding another db here for compensation
+         * Seemed logical to just copy the employees code
+         * Since we are looking at making a table that is persistent like employees
+         */
+
         InputStream newStream = this.getClass().getResourceAsStream(COMPENSATION_DATASTORE);
 
         Compensation[] compensations = null;

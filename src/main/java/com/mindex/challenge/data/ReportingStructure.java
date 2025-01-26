@@ -8,10 +8,12 @@ public class ReportingStructure {
     public ReportingStructure() {
     }
 
+    //I added this constructor because in getting the reports i dont have to call the setter
     public ReportingStructure(Employee e) {
         this.employee = e;
     }
 
+    //create getters
     public Employee getEmployee() {
         return this.employee;
     }
@@ -20,6 +22,7 @@ public class ReportingStructure {
         return this.numberOfReports;
     }
 
+    //create setters
     public void setEmployee(Employee e) {
         this.employee = e;
     }
