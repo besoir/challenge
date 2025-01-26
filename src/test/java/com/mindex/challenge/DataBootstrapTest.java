@@ -27,4 +27,12 @@ public class DataBootstrapTest {
         assertEquals("Development Manager", employee.getPosition());
         assertEquals("Engineering", employee.getDepartment());
     }
+
+    @Test
+    public void testCompensation() {
+        Compensation compensation = compensationRepository.findByEmployeeId("16a596ae-edd3-4847-99fe-c4518e82c86f");
+        assertNotNull(compensation);
+        assertEquals("10000", compensation.getSalary());
+        assertEquals("01/01/2001", compensation.getEffectiveDate());
+    }
 }

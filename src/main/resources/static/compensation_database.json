@@ -1,0 +1,27 @@
+[
+    {
+      "employeeId" : "16a596ae-edd3-4847-99fe-c4518e82c86f",
+      "salary": "10000",
+      "effectiveDate":"01/01/2001"
+    },
+    {
+      "employeeId" : "b7839309-3348-463b-a7e3-5de1c168beb3",
+      "salary": "20000",
+      "effectiveDate":"02/02/2002"
+    },
+    {
+      "employeeId" : "03aa1462-ffa9-4978-901b-7c001562cf6f",
+      "salary": "30000",
+      "effectiveDate":"03/03/2003"
+    },
+    {
+      "employeeId" : "62c1084e-6e34-4630-93fd-9153afb65309",
+      "salary": "40000",
+      "effectiveDate":"04/04/2004"
+    },
+    {
+      "employeeId" : "c0c2293d-16bd-4603-8e08-638a9d18b22c",
+      "salary": "50000",
+      "effectiveDate":"05/05/2005"
+    }
+  ]

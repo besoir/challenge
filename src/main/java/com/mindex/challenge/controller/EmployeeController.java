@@ -2,6 +2,7 @@ package com.mindex.challenge.controller;
 
 import com.mindex.challenge.data.Employee;
 import com.mindex.challenge.service.EmployeeService;
+import com.mindex.challenge.data.ReportingStructure;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -31,6 +33,13 @@ public class EmployeeController {
         LOG.debug("Received employee create request for id [{}]", id);
 
         return employeeService.read(id);
+    }
+
+    @GetMapping("/reportingstructure/{id}")
+    public ReportingStructure readReportingStructure(@PathVariable String id) {
+        LOG.debug("Received employee create request for id [{}]", id);
+
+        return employeeService.readReportingStructure(id);
     }
 
     @PutMapping("/employee/{id}")
