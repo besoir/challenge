@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mindex.challenge.service.impl.EmployeeServiceImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-01-28T18:11:11" hostname="WINSTONSWORKSTA" time="0.115">
+  <properties/>
+  <testcase name="testEmployees" classname="com.mindex.challenge.service.impl.EmployeeServiceImplTest" time="0.033"/>
+  <testcase name="testCreateReadUpdate" classname="com.mindex.challenge.service.impl.EmployeeServiceImplTest" time="0.039"/>
+  <testcase name="testCreateReportingStructure" classname="com.mindex.challenge.service.impl.EmployeeServiceImplTest" time="0.042"/>
+  <system-out><![CDATA[2025-01-28T13:11:11.590-05:00  INFO 29528 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.mindex.challenge.service.impl.EmployeeServiceImplTest]: EmployeeServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-28T13:11:11.591-05:00  INFO 29528 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.mindex.challenge.ChallengeApplication for test class com.mindex.challenge.service.impl.EmployeeServiceImplTest
+2025-01-28T13:11:11.597-05:00 DEBUG 29528 --- [o-auto-1-exec-2] c.m.c.controller.EmployeeController      : Received request for  employees
+2025-01-28T13:11:11.598-05:00 DEBUG 29528 --- [o-auto-1-exec-2] c.m.c.service.impl.EmployeeServiceImpl   : Grabbing all Employees
+2025-01-28T13:11:11.613-05:00 DEBUG 29528 --- [o-auto-1-exec-3] c.m.c.controller.EmployeeController      : Received employee create request for [com.mindex.challenge.data.Employee@440683aa]
+2025-01-28T13:11:11.613-05:00 DEBUG 29528 --- [o-auto-1-exec-3] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [com.mindex.challenge.data.Employee@440683aa]
+2025-01-28T13:11:11.619-05:00 DEBUG 29528 --- [o-auto-1-exec-4] c.m.c.controller.EmployeeController      : Received request for  employees
+2025-01-28T13:11:11.619-05:00 DEBUG 29528 --- [o-auto-1-exec-4] c.m.c.service.impl.EmployeeServiceImpl   : Grabbing all Employees
+2025-01-28T13:11:11.645-05:00 DEBUG 29528 --- [o-auto-1-exec-5] c.m.c.controller.EmployeeController      : Received employee create request for [com.mindex.challenge.data.Employee@1f99e247]
+2025-01-28T13:11:11.645-05:00 DEBUG 29528 --- [o-auto-1-exec-5] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [com.mindex.challenge.data.Employee@1f99e247]
+2025-01-28T13:11:11.654-05:00 DEBUG 29528 --- [o-auto-1-exec-6] c.m.c.controller.EmployeeController      : Received employee create request for id [0671ee5f-23b4-4437-9a2d-1c095842fd11]
+2025-01-28T13:11:11.654-05:00 DEBUG 29528 --- [o-auto-1-exec-6] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee with id [0671ee5f-23b4-4437-9a2d-1c095842fd11]
+2025-01-28T13:11:11.659-05:00 DEBUG 29528 --- [o-auto-1-exec-7] c.m.c.controller.EmployeeController      : Received employee create request for id [0671ee5f-23b4-4437-9a2d-1c095842fd11] and employee [com.mindex.challenge.data.Employee@68d75a9d]
+2025-01-28T13:11:11.661-05:00 DEBUG 29528 --- [o-auto-1-exec-7] c.m.c.service.impl.EmployeeServiceImpl   : Updating employee [com.mindex.challenge.data.Employee@68d75a9d]
+2025-01-28T13:11:11.677-05:00 DEBUG 29528 --- [o-auto-1-exec-8] c.m.c.controller.EmployeeController      : Received employee create request for [com.mindex.challenge.data.Employee@409659be]
+2025-01-28T13:11:11.677-05:00 DEBUG 29528 --- [o-auto-1-exec-8] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [com.mindex.challenge.data.Employee@409659be]
+2025-01-28T13:11:11.693-05:00 DEBUG 29528 --- [o-auto-1-exec-9] c.m.c.controller.EmployeeController      : Received employee create request for [com.mindex.challenge.data.Employee@742c9f61]
+2025-01-28T13:11:11.693-05:00 DEBUG 29528 --- [o-auto-1-exec-9] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [com.mindex.challenge.data.Employee@742c9f61]
+2025-01-28T13:11:11.700-05:00 DEBUG 29528 --- [-auto-1-exec-10] c.m.c.controller.EmployeeController      : Received employee create request for id [2b6b1dc4-9e7e-4d32-a65c-145a783526e6]
+2025-01-28T13:11:11.700-05:00 DEBUG 29528 --- [-auto-1-exec-10] c.m.c.service.impl.EmployeeServiceImpl   : Creating Reporting Structure for eployee with id: [{}]2b6b1dc4-9e7e-4d32-a65c-145a783526e6
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
